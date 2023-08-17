@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content:"\1F609";
+            /* background-color: chartreuse; */
+        }
+        H1::AFTER{
+            content:"\1F609"
+        }
+        .mydiv{
+            height: auto;
+            width: 300px;
+            border: 2px solid red;
+            padding: 15px;
+        }
+        .mydiv::first-letter{
+            font-size: 35px;
+        }
+        .mydiv::first-line{
+            color: blueviolet;
+        }
+        .mydiv::selection{
+            background-color: black;
+            color: azure;
+        }
+        input::placeholder{
+            font-size: 15px;
+            text-align: center;
+            color:blue
+        }
+    </style>
+</head>
+</head>
+<body>
+    <h1>Hello user</h1>
+    <div class="mydiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corporis eaque dolores ab eum odio qui ducimus earum, officia modi officiis amet quo architecto, nam quaerat natus veritatis? Qui, aspernatur?
+    </div>
+    <ul>
+        <li>list1</li>
+        <li>list2</li>
+    </ul>
+    <input type="text"name=""id=""placeholder="ENTER NAME"> 
+</body>
+</html>
