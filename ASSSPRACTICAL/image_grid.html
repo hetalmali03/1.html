@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            background-color: black;
+        }
+
+        .div1 {
+            grid-column: 1 / span 2;
+        }
+
+        .div4 {
+            grid-row: 2 / span 2;
+            height: 100%;
+        }
+
+        .div3 {
+            grid-column: 4;
+            grid-row: 1 / span 2;
+            height: 100%;
+        }
+
+        .div6 {
+            grid-row: 2;
+            grid-column: 2 / span 2;
+            width: 100%;
+        }
+
+        .h-img {
+            height:250px;
+            width: 100%;
+        }
+
+        .v-img {
+            height: 100%;
+            width: 260px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">
+            <img src="./pexels-photo-3220368.webp" alt="" class="h-img">
+        </div>
+        <div class="div2">
+            <img src="./img5.jpeg" alt="" class="h-img">
+        </div>
+        <div class="div3">
+            <img src="./img2.jpeg" alt="" class="v-img">
+        </div>
+        <div class="div4">
+            <img src="./peimg4.jpeg" alt="" class="v-img">
+        </div>
+        <div class="div5">
+            <img src="./pexels-photo-3220368.webp" alt="" class="h-img">
+        </div>
+        <div class="div6">
+            <img src="./7.webp" alt="" class="h-img">
+        </div>
+        <div class="div7">
+            <img src="img3.jpeg" alt="" class="h-img">
+        </div>
+        <div class="div8">
+            <img src="image8.jpg" alt="" class="h-img">
+        </div>
+        <div class="div9">
+            <img src="image10.jpeg" alt="" class="h-img">
+        </div>
+        <div class="div10">
+            <img src="images11.webp" alt="" class="h-img">
+        </div>
+        <div class="div11">
+            <img src="./img6.webp" alt="" class="h-img">
+        </div>
+    </div>
+</body>
+
+</html>
