@@ -1,0 +1,116 @@
+(1)What is jQuery?
+ans:Query is a lightweight, "write less, do more", JavaScript library.
+
+The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+
+The jQuery library contains the following features:
+
+1 HTML/DOM manipulation
+2 CSS manipulation
+3 HTML event methods
+4 Effects and animations
+5 AJAX
+6 Utilities
+
+(2)How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,JQuery Animation?
+ans:The css() method sets or returns one or more style properties for the selected elements.
+    =>To return the value of a specified CSS property, use the following syntax:
+
+  css("propertyname");
+ The following example wil
+
+=>Add class:In this article, we will learn to animate using jQuery addClass() and removeClass() functions.
+
+We are going to use jQuery and jQuery UI.  jQuery UI (User Interface) is free and open-source software that is built on top of the core powerful jQuery library. If you want to use jQuery UI, you must include jQuery too.  jQuery UI provides more features like add Class, color animation and easing, etc.
+
+We are going to use some jQuery UI addClass() and removeClass() methods.
+
+addClass() method: It is used to add specified classes to each of the targeted elements while animating all style changes.
+Syntax:
+
+.addClass(className, [duration], [easing], [callback])
+
+=>Remove class:removeClass() method: It is used to remove the classes from the element while animating all style changes.
+
+Syntax:
+
+.removeClass(className, [duration], [easing], [callback])
+=>Animation:The jQuery animate() method is used to create custom animations.
+
+Syntax:
+
+$(selector).animate({params},speed,callback);
+The required params parameter defines the CSS properties to be animated.
+
+The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.
+
+The optional callback parameter is a function to be executed after the animation completes.
+
+(3)How to create slider with animation?
+=>Animated sliders are one of the most commonly used UI elements. Generally, sliders are used for various purposes, including but not limited to image galleries, app selections, volume controls, lock screens, etc
+==>First of call use a jQuery cdn
+=>now create a HTML:
+<div class="bxslider">
+  <div><img src="img1 title"="Coffee 1" ></div>
+  <div><img src=""img2 title"="Coffee 2" /></div>
+  <div><img src="img3" title="Coffee 3" /></div>
+</div>
+
+Now create a jQuery code:
+$(function(){
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      captions: true,
+      slideWidth: 600
+    });
+  });
+
+(4) Event bubbling tickling example.
+ans:Event bubbling is a method of event propagation in the HTML DOM API when an event is in an element inside another element, and both elements have registered a handle to that event. It is a process that starts with the element that triggered the event and then bubbles up to the containing elements in the hierarchy. In event bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.
+
+Syntax: 
+
+addEventListener(type, listener, useCapture)
+	type: Use to refer to the type of event.	
+	listener: Function we want to call when the event of the specified type occurs.
+	userCapture: Boolean value. The boolean value indicates the event phase. By Default useCapture is false. It means it is in the bubbling phase.
+	Example: This example shows the working of event bubbling in JavaScript.
+example:
+<body> 
+	<h2> Event in Javascript</h2> 
+
+	<div id="parent"> 
+		<button> 
+			<h2>Parent</h2> 
+		</button> 
+		<button id="child"> 
+
+			<p>Child</p> 
+
+		</button> 
+	</div><br> 
+
+
+	<script> 
+		document.getElementById( 
+		"child").addEventListener("click", function () { 
+			alert("You clicked the Child element!"); 
+		}, false); 
+		
+		document.getElementById( 
+		"parent").addEventListener("click", function () { 
+			alert("You clicked the parent element!"); 
+		}, false); 
+	</script> 
+
+</body> 
+
+
+
+
+
+
